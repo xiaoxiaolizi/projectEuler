@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <pre>
+   Multiples of 3 and 5
+	If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+	Find the sum of all the multiples of 3 or 5 below 1000.
+  </pre>
+  <pre>
+  3的倍数和5的倍数
+	如果我们列出10以内所有3或5的倍数，我们将得到3、5、6和9，这些数的和是23。
+
+	求1000以内所有3或5的倍数的和。
+  </pre>
+   <script>
+      //方法一
+	   console.info(new Date().getTime());
+       for(var i=1,arr=[];i<10;i++){
+		   if(i%3==0||i%5==0){
+			    arr.push(i);
+		   }
+	     }
+	 /*  for(var i=0,sum=0;i<arr.length;i++){
+	     sum+=arr[i];
+	   } */
+	   for(var i=0,sum=0;i<arr.length;i++){
+	     sum=(arr[i]+arr[arr.length])/2;
+		
+	   }
+	    console.info(new Date().getTime());
+	   console.log(arr);
+	   console.log(sum);
+   </script>
+ </body>
+</html>
